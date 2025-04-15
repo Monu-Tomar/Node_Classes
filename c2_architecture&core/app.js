@@ -1,6 +1,8 @@
 //  # Node Architecture & Core
 // Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
+console.log('Hello, Node.js!'); // Hello, Node.js!
+
 // console.log(process.versions.node);
 
 
