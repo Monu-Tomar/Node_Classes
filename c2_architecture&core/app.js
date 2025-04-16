@@ -3,6 +3,9 @@
 
 console.log('Hello, Node.js!'); // Hello, Node.js!
 
+// console.log("File path: ",__filename); // Current file name (e.g., app.js)
+// console.log("Folder path: ",__dirname); // Current directory name (e.g., /path/to/your/directory)
+
 // console.log(process.versions.node);
 
 
