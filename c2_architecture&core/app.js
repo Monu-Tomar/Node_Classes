@@ -49,6 +49,8 @@ const os= require('os');
 // console.log(os.networkInterfaces()); // Network interfaces information
 // console.log(os.hostname()); // Hostname of the operating system
 // console.log(os.machine()); // Machine architecture (x86, x64, etc.)
+console.log(os.userInfo()); // User information (username, home directory, etc.)
+// console.log(os.uptime()); // Uptime of the operating system in seconds
 
 
 // error('This is an error message!');
