@@ -1,0 +1,8 @@
+/.node_modeles
+*.log
+*.lock
+*.env
+*.DS_Store
+*.swp
+*.swo
+*.swn

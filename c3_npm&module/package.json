@@ -1,0 +1,18 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "Teen bhai teeno tabhai ki node class",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monu Tomar",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "one-liner-joke": "^1.2.2",
+    "style": "^0.0.3"
+  }
+}
