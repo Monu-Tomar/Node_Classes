@@ -122,3 +122,5 @@ const speedTest = require('speed-test');
 
 
 // REST OF WORK WLL ADDED LATER
+
+// whenEVER I GET TIME I WILL ADD THE REST OF WORK
