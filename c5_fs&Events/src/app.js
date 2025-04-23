@@ -24,3 +24,6 @@ console.log(res);
 // const { readFile, writeFile } = require("fs").promises;
 // const { readFileSync, writeFileSync } = require("fs");
 
+
+
+// something went wrong so I am trying to fix it and update the code, later I will delete this comment
