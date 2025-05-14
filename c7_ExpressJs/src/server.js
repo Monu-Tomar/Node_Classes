@@ -33,7 +33,58 @@ app.post("", (_, res)=>{
 
 // app.get("/*", (_,res)=>{
 //   res.status(404).send("404 error code.")
-// });   
+// }); 
+
+
+
+//$---------------------------------------------------------------------------------------
+app.get("/u2", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send(req.url);
+});
+//$---------------------------------------------------------------------------------------
+app.get("/search", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send(req.query);
+});
+
+//$---------------------------------------------------------------------------------------
+app.get("/product", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send(req.params);
+});
+//$---------------------------------------------------------------------------------------
+app.get("/product/:brand", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send(req.params);
+});
+//$---------------------------------------------------------------------------------------
+app.get("/product/:brand/:car", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send(req.params);
+});
+//$---------------------------------------------------------------------------------------
+//$---------------------------------------------------------------------------------------
+
+app.get("/contact.php", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.redirect("/contact");
+});
+//$---------------------------------------------------------------------------------------
+app.get("/contact", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).send("<h2>Contact page</h2>");
+});
+
+//$---------------------------------------------------------------------------------------
+//$---------------------------------------------------------------------------------------
+app.get("/applii", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.status(200).download(path.resolve("src/public/img/mute.png"), (err) => {
+    console.warn("Try Again");
+    res.status(404).send("<h2>File not found }}}}}</h2>");
+  });
+});
 
 
 
