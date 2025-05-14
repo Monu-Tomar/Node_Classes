@@ -7,6 +7,7 @@ const app = express();
 //   res.status(300).send("Halo mittar");
 // });          // geting Error with *
 // this will appear in version 5 but if work with older version 4.21.2 it will working well.
+// step uninstall version 5 and install 4.21.2
 
 app.use((req,res)=>{
   res.status(404).send(" from error")
