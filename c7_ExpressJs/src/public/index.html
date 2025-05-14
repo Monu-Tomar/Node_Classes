@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node class c7</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Express js c7</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Home page</h1>
+    <!-- <div class="container">
+        <div class="background"></div>
+        <div class="particles"></div>
+
+        <div class="glass-card">
+            <h1 class="gradient-text">The World of Glassmorphism</h1>
+            <p class="subtitle">Experience the future of web interfaces</p>
+
+            <div class="button-group">
+                <button class="btn hover-effect">Explore More</button>
+                <button class="btn hover-effect secondary">Secondary Button</button>
+            </div>
+        </div>
+
+        <div class="floating-blobs">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+        </div>
+    </div> -->
+
     <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et alias voluptates ipsa enim explicabo repellendus exercitationem quae, recusandae aspernatur quia hic reprehenderit sit eveniet saepe cumque aliquid adipisci ad ex expedita itaque repudiandae dignissimos consectetur quas nemo! Molestiae, quibusdam pariatur quas commodi itaque incidunt ipsa inventore dolorum numquam quis voluptatum?
+        <img class="img" src="./img/auth.jpg" alt="auth image" loading="lazy" height="500px" width="500px">
     </div>
+
+    <hr>
+    <h1>Form check</h1>
+    <form action="/user" method="get">
+        <label for="search">Search</label>
+        <input type="search" name="query" id="search" required>
+        <button>Search</button>
+    </form>
+
+    <script>
+        // Particles animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const particles = document.querySelector('.particles');
+
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = Math.random() * 3 + 2 + 's';
+                particles.appendChild(particle);
+
+                particle.addEventListener('animationend', () => {
+                    particle.remove();
+                });
+            }
+
+            setInterval(createParticle, 100);
+
+            // Add floating blob elements
+            const blobs = document.querySelectorAll('.blob');
+            blobs.forEach((blob, index) => {
+                blob.style.animationDelay = `${index * 5}s`;
+            });
+
+            // Add mouse interaction
+            document.addEventListener('mousemove', (e) => {
+                const glassCard = document.querySelector('.glass-card');
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+                glassCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            });
+        });
+    </script>
+    <script src="comman.js"></script>
 </body>
+
 </html>

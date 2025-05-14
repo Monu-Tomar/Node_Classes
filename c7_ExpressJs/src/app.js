@@ -30,7 +30,22 @@ const port = process.env.PORT || 3300;   // when we change the port first we nee
 //     console.log("byy from /")
 // });
 
+
 app.use(express.static(path.resolve("src/public")));
+
+app.get(/.*fly$/, (req,res)=>{
+  res.status(200).send(req.query);
+});
+
+app.use("/ab*c", (_, res)=>{
+  res.status(200).json({
+    message: "hello mn user"
+  })
+})
+
+// app.get("**", (req, res) => {
+//   res.status(300).send("Halo mittar");
+// });
 
 app.listen(port, ()=>{
     console.log(`server is running on port http://localhost:${port}`);
